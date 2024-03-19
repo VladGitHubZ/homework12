@@ -13,6 +13,9 @@
                         ", published in " + book1.getPublicationYear());
                 System.out.println("Book 2: " + book2.getTitle() + " by " + book2.getAuthor().getFullName() +
                         ", published in " + book2.getPublicationYear());
+                System.out.println("Book 1: " + book1.toString());
+                System.out.println("Book 2: " + book2.toString());
+
             }
         }
 
