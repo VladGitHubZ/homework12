@@ -30,11 +30,14 @@ public class Book {
     }
 
     public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
         return publicationYear == book.publicationYear &&
                 (title == book.title || (title != null && title.equals(book.title))) &&
                 (author == book.author || (author != null && author.equals(book.author)));
     }
+
     public int hashCode() {
         int result = 1;
         result = 27 * result + (title != null ? title.hashCode() : 0);
